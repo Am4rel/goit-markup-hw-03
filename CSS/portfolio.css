@@ -1,0 +1,114 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/raleway-700-normal.woff2") format("woff2"),
+    url("../fonts/raleway-700-normal.woff") format("woff"),
+    url("../fonts/raleway-700-normal.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --primary-text: #212121;
+  --secondary-text: #757575;
+  --white-color: #ffffff;
+  --blue-color: #2196f3;
+  --light-gray: rgba(255, 255, 255, 0.6);
+  --button-background: #f5f4fa;
+}
+
+body {
+  color: var(--primary-text);
+  font-family: Roboto, sans-serif;
+}
+.logo {
+  color: var(--blue-color);
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+}
+.header.logo {
+  color: var(--primary-text);
+}
+
+.footer.logo {
+  color: var(--white-color);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.nav-link,
+.contacts-head,
+.contacts-foot,
+.address-foot {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+
+  letter-spacing: 0.02em;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--blue-color);
+}
+
+.contacts-head {
+  color: var(--secondary-text);
+}
+
+.contacts-foot {
+  color: var(--light-gray);
+}
+
+.address-foot {
+  color: var(--white-color);
+}
+
+.contacts-foot:hover,
+.contacts-foot:focus,
+.contacts-head:hover,
+.contacts-head:focus,
+.address-foot:hover,
+.address-foot:focus {
+  color: var(--blue-color);
+}
+
+.button {
+  color: var(--primary-text);
+  background-color: var(--button-background);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--white-color);
+  background-color: var(--blue-color);
+}
+
+.project-name {
+  color: var(--primary-text);
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.project-type {
+  color: var(--secondary-text);
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: normal;
+}
