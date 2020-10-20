@@ -27,8 +27,6 @@ body {
 
   margin-top: 0;
   margin-bottom: 0;
-  margin-right: 215px;
-  margin-left: 215px;
 }
 
 h1,
@@ -233,6 +231,7 @@ p {
 }
 
 .strength-container {
+  width: 1600px;
   margin-left: 215px;
   margin-right: 215px;
   margin-bottom: 94px;
@@ -269,6 +268,12 @@ p {
   display: block;
 }
 
+.team-container {
+  width: 1600px;
+  margin-left: 215px;
+  margin-right: 215px;
+}
+
 .team-container .section-title {
   padding-top: 94px;
 }
@@ -288,6 +293,12 @@ p {
 }
 
 /* Стили для секции работы */
+
+.work-container {
+  width: 1600px;
+  margin-left: 215px;
+  margin-right: 215px;
+}
 
 .work.list {
   display: flex;
@@ -312,8 +323,8 @@ p {
 
 .footer-container {
   width: 1600px;
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: 215px;
+  margin-left: 215px;
 
   padding-right: 215px;
   padding-left: 215px;
