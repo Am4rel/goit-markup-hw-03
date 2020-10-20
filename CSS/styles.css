@@ -51,6 +51,8 @@ p {
   padding: 0px;
 }
 
+/* Стили для шапки сайта */
+
 .logo {
   color: var(--blue-color);
 
@@ -83,6 +85,59 @@ p {
   color: var(--blue-color);
 }
 
+.contacts-head {
+  color: var(--secondary-text);
+}
+
+.contacts-foot {
+  color: var(--light-gray);
+}
+
+.address-foot {
+  color: var(--white-color);
+}
+
+.contacts-foot:hover,
+.contacts-foot:focus,
+.contacts-head:hover,
+.contacts-head:focus,
+.address-foot:hover,
+.address-foot:focus {
+  color: var(--blue-color);
+}
+
+.header-container {
+  width: 1600px;
+
+  margin-top: 24px;
+  margin-left: 215px;
+  margin-bottom: 25px;
+  margin-right: 215px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-container .list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-container .list .list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-container .list .list-item:last-child {
+  margin-right: 331px;
+}
+
+.header-container .logo {
+  margin-right: 93px;
+}
+
+/* Стили для секции героя */
+
 .hero.section {
   width: 1600px;
 
@@ -111,27 +166,6 @@ p {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--bg-color);
-}
-
-.contacts-head {
-  color: var(--secondary-text);
-}
-
-.contacts-foot {
-  color: var(--light-gray);
-}
-
-.address-foot {
-  color: var(--white-color);
-}
-
-.contacts-foot:hover,
-.contacts-foot:focus,
-.contacts-head:hover,
-.contacts-head:focus,
-.address-foot:hover,
-.address-foot:focus {
-  color: var(--blue-color);
 }
 
 .section-title {
@@ -168,6 +202,8 @@ p {
   background-color: var(--white-color);
 }
 
+/* Стили для секции преимуществ */
+
 .strength.title {
   font-weight: 700;
   font-size: 14px;
@@ -180,6 +216,29 @@ p {
 .strength-text {
   color: var(--secondary-text);
 }
+
+.strength.list {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 94px;
+}
+
+.strength .list-item {
+  width: 270px;
+}
+
+.strength .list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.strength-container {
+  margin-left: 215px;
+  margin-right: 215px;
+  margin-bottom: 94px;
+}
+
+/* Стили для секции команда */
 
 .team-section {
   text-align: center;
@@ -214,56 +273,21 @@ p {
   padding-top: 94px;
 }
 
-.header-container {
-  width: 1600px;
-
-  margin-top: 24px;
-  margin-left: 215px;
-  margin-bottom: 25px;
-  margin-right: 215px;
-
+.team-list {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
-.header-container .list {
-  display: flex;
-  justify-content: space-between;
+.team.list-item {
+  background-color: var(--white-color);
+  margin-bottom: 94px;
 }
 
-.header-container .list .list-item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.nav-container .list .list-item:last-child {
-  margin-right: 331px;
-}
-
-.header-container .logo {
-  margin-right: 93px;
-}
-
-.strength.list {
-  display: flex;
-  justify-content: center;
-
-  margin-top: 94px;
-}
-
-.strength .list-item {
-  width: 270px;
-}
-
-.strength .list-item:not(:last-child) {
+.team.list-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.strength-container {
-  margin-left: 215px;
-  margin-right: 215px;
-  margin-bottom: 94px;
-}
+/* Стили для секции работы */
 
 .work.list {
   display: flex;
@@ -279,19 +303,7 @@ p {
   margin-right: 30px;
 }
 
-.team-list {
-  display: flex;
-  justify-content: center;
-}
-
-.team.list-item {
-  background-color: var(--white-color);
-  margin-bottom: 94px;
-}
-
-.team.list-item:not(:last-child) {
-  margin-right: 30px;
-}
+/* Стили для футера */
 
 .footer {
   background-color: var(--bg-color);
@@ -309,7 +321,7 @@ p {
   padding-top: 60px;
 }
 
-.footer-container > .link {
+.footer-container .link {
   margin-bottom: 30px;
 }
 
