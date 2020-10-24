@@ -34,6 +34,10 @@ p {
   padding: 0;
 }
 
+img {
+  display: block;
+}
+
 .link {
   text-decoration: none;
   margin: 0;
@@ -44,6 +48,14 @@ p {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.container {
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 215px;
+  padding-left: 215px;
 }
 
 /* Стили для шапки страницы */
@@ -64,10 +76,6 @@ p {
 
 .footer.logo {
   color: var(--white-color);
-}
-
-.list-item {
-  list-style: none;
 }
 
 .nav-link,
@@ -106,12 +114,8 @@ p {
 }
 
 .header-container {
-  width: 1600px;
-
-  margin-top: 24px;
-  margin-left: 215px;
-  margin-bottom: 25px;
-  margin-right: 215px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 
   display: flex;
   justify-content: center;
@@ -135,13 +139,11 @@ p {
   margin-right: 93px;
 }
 
-/* Стили для кнопок фильтра */
-
-.button-container {
-  width: 1600px;
-  margin-right: 215px;
-  margin-left: 215px;
+a[href="./portfolio.html"] {
+  color: var(--blue-color);
 }
+
+/* Стили для кнопок фильтра */
 
 .list .button {
   color: var(--primary-text);
@@ -166,8 +168,8 @@ p {
   display: flex;
   justify-content: center;
 
-  margin-top: 94px;
-  margin-bottom: 50px;
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 
 .button.list .list:not(:last-child) {
@@ -175,12 +177,6 @@ p {
 }
 
 /* Стили для основного контента */
-
-.portfolio-container {
-  width: 1600px;
-  margin-left: 215px;
-  margin-right: 215px;
-}
 
 .project-name {
   color: var(--primary-text);
@@ -203,10 +199,6 @@ p {
 .portfolio.list {
   display: flex;
   justify-content: center;
-
-  margin-left: 215px;
-  margin-right: 215px;
-
   flex-wrap: wrap;
 }
 
@@ -238,22 +230,12 @@ p {
 }
 
 .footer-container {
-  width: 1600px;
-  margin-right: 215px;
-  margin-left: 215px;
-
-  padding-right: 215px;
-  padding-left: 215px;
   padding-bottom: 60px;
   padding-top: 60px;
 }
 
-/* .footer-container .link.logo {
-  margin-bottom: 30px;
-} */
-
-.address-foot {
-  margin-top: 30px;
+.footer.list {
+  padding-top: 20px;
 }
 
 .footer.list .list-item:not(:last-child) {
